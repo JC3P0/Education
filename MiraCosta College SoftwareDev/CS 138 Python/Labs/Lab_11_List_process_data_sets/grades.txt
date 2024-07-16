@@ -1,0 +1,7 @@
+Student  #1  #2  #3  Final
+Thorny  100  90  80  85
+Mac      88  99  95  85
+Farva    45  56  67  92
+Steve    59  64  67  84
+Ursula   73  79  83  62
+Foster   89  97  94  98

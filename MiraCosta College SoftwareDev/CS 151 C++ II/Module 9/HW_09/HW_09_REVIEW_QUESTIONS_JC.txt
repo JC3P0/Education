@@ -1,0 +1,22 @@
+Fill-In-The-Blank and Review Questions (10 points)
+
+These questions are taken from Chapter 13 of our textbook:
+
+5.    The three file stream data types are                       ,                       , and                       .
+ANSWER = ifstream, ofstream, fstream
+
+15.    If a file fails to open, the file stream object will be set to                       .
+ANSWER = 0
+
+For the next three review question, you cannot assume that the file is small enough to read into memory at once.
+
+39.    Design a pseudocode algorithm for determining the  number of bytes that are stored in a file (aka the "size" or "length" of the file).
+ANSWER = open file then read one byte at a time and += a total.
+
+Try to do the above without using the  seek...  or  tell...  functions
+
+40.    Design a pseudocode algorithm for comparing two binary files to see if their contents are identical.  Make sure to handle the case where the two files are of different sizes.
+ANSWER = first compare sizes and return false if different then read byte by byte while comparing and return false if a difference is found.
+
+41.    Design a pseudocode algorithm for reversing the content of one file into another file.  Assume that the amount of memory is limited, so that you cannot read the entire source file into memory before you start writing it into the second file in reverse order.
+ANSWER = read byte by byte starting at the end of file and write the byte at the start of the new file, reversing the contents.

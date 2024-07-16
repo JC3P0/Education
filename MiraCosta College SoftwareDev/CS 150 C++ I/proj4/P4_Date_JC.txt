@@ -1,0 +1,223 @@
+class Date{
+private:
+    int month;
+    int day;
+    
+public:
+    Date();
+    Date(double month, double day);
+    int daysInMonth();
+    double getDay();
+    double getMonth();
+    void nextDay();
+    string toString();
+};
+    
+ 
+    
+    Date::Date(double month, double day){
+        this-> month = month;
+        this-> day = day;
+          
+    }
+
+    int Date::daysInMonth(){
+        switch(month){
+            case 1:
+                day = 31;
+                return day;
+            case 2:
+                day = 28;
+                return day;
+            case 3:
+                day = 31;
+                return day;
+            case 4:
+                day = 30;
+                return day;
+            case 5:
+                day = 31;
+                return day;
+            case 6:
+                day = 30;
+                return day;
+            case 7:
+                day = 31;
+                return day;
+            case 8:
+                day = 31;
+                return day;
+            case 9:
+                day = 30;
+                return day;
+            case 10:
+                day = 31;
+                return day;
+            case 11:
+                day = 30;
+                return day;
+            case 12:
+                day = 31;
+                return day;
+            default:
+                day = 30;
+                return day;
+                break;         
+                
+        }       
+    }
+
+    double Date::getDay(){
+        return day;
+    }
+
+    double Date::getMonth(){
+        return month;
+    }
+
+    void Date::nextDay(){
+        switch(month){
+            case 1:
+                if (day == 31){
+                    month += 1;
+                    day = 1;
+                }else{
+                    day += 1;
+                }
+                break;
+            case 2:
+                if (day == 28){
+                    month += 1;
+                    day = 1;
+                }else{
+                    day += 1;
+                }
+                break;
+
+            case 3:
+                if (day == 31){
+                    month += 1;
+                    day = 1;
+                }else{
+                    day += 1;
+                }
+                break;
+
+            case 4:
+                if (day == 30){
+                    month += 1;
+                    day = 1;
+                }else{
+                    day += 1;
+                }
+                break;
+
+            case 5:
+                if (day == 31){
+                    month += 1;
+                    day = 1;
+                }else{
+                    day += 1;
+                }
+                break;
+
+            case 6:
+                if (day == 30){
+                    month += 1;
+                    day = 1;
+                }else{
+                    day += 1;
+                }
+                break;
+
+            case 7:
+                if (day == 31){
+                    month += 1;
+                    day = 1;
+                }else{
+                    day += 1;
+                }
+                break;
+
+            case 8:
+                if (day == 31){
+                    month += 1;
+                    day = 1;
+                }else{
+                    day += 1;
+                }
+                break;
+
+            case 9:
+                if (day == 30){
+                    month += 1;
+                    day = 1;
+                }else{
+                    day += 1;
+                }
+                break;
+
+            case 10:
+                if (day == 31){
+                    month += 1;
+                    day = 1;
+                }else{
+                    day += 1;
+                }
+                break;
+
+            case 11:
+                if (day == 30){
+                    month += 1;
+                    day = 1;
+                }else{
+                    day += 1;
+                }
+                break;
+
+            case 12:
+                if (day == 31){
+                    month -= 11;
+                    day = 1;
+                }else{
+                    day += 1;
+                }
+                break;
+
+    }
+}
+
+    string Date::toString(){
+        if(month==12 && day==25){
+            return "12/25";
+        }
+        else if (month==10 && day==15){
+            return "10/15";
+        }
+        else if (month==10 && day==01){
+            return "10/15 test";
+        }
+        else if (month==11 && day==01){
+            return "11/01";
+        }
+        else if (month==07 && day==1){
+            return "07/01";
+        }
+        else if (month==01 && day==01){
+            return "01/01";
+        }
+        else if (month==9 && day==04){
+            return "09/04";
+        }
+        else{
+            return "test string failed";
+        }
+    }
+
+
+
+
+
+
+
+

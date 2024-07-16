@@ -1,0 +1,3 @@
+Sao Paulo#Lima#Mexico City#New York#Bogota#Rio de Janeiro
+Santiago#Los Angeles#Buenos Aires#Brasilia#Salvador
+Toronto#Chicago#Fortaleza#Santo Domingo

@@ -1,0 +1,22 @@
+These questions are taken from Chapter 11 of our textbook:
+
+15.    The class  Stuff  has both a copy constructor and an assignment operator ( = ).  Assume that  blob  and  clump  are both instances of the  Stuff  class.  For each of the statements below, indicate whether the copy constructor or the assignment operator will be called.  
+
+  a) Stuff blob = clump ;
+	ANSWER = copy constructor
+
+  b) clump = blob ;
+	ANSWER = assignment operator ( = )
+
+  c) blob.operator=(clump) ;
+	ANSWER = assignment operator ( = )
+
+  d) showValues(blob) ;       // blob is passed by value  
+	ANSWER = copy constructor
+ 
+
+24.    Assume a class named  Bird  exists.  Write the header for a member function that overloads the  =  operator for that class.
+	ANSWER = Bird &Bird::operator=(const Bird &original)
+
+28.    Assume a class named  Collection  exists.  Write the header for a member function that overloads the  [ ]  operator for that class.
+	ANSWER = char &Collection::operator[](int i)

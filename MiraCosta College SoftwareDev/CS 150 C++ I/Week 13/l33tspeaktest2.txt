@@ -1,0 +1,68 @@
+void leetSpeak(string filename, string outname){
+    
+    ifstream input( filename );
+    ofstream output( outname );
+    string word;
+    string line;
+    istringstream iss;
+       
+     
+    while (!input.eof()){ //loop to read lines till .endOfFile
+        getline(input, line); //reads line by line in loop
+        
+        if (line.empty()){ //if line is blank, writes \n
+            output <<  endl;
+        }
+        
+        else if(input.good()){
+            
+            iss.clear(); //clears string for each loop to process new line
+            iss.str(line);
+            while(iss.good()){ //read word by word within each line
+                iss >> word;
+                output << "("; //start each word with (
+                for(int i =0; i < word.length(); i++){ //process each word char by char
+                    if(word[i] == 'o'){ // checks for possible "l33t" char to change
+                        word[i] = '0';  // changes char to "l33t"
+                        output.put(word[i]); // writes char as "l33t"
+                    }
+                    else if(word[i] == 'l'){
+                        word[i] = '1';
+                        output.put(word[i]);
+                    }
+                    else if(word[i] == 'e'){
+                        word[i] = '3';
+                        output.put(word[i]);
+                    }
+                    else if(word[i] == 'a'){
+                        word[i] = '4';
+                        output.put(word[i]);
+                    }
+                    else if(word[i] == 't'){
+                        word[i] = '7';
+                        output.put(word[i]);
+                    }
+                    else if(word[i] == 's'){
+//                        for (int i = word.length()-1; i < word.length(); i++){
+                            
+//                        }
+                                                
+                        if (word.length()-1 == 's'){
+                        word[i] = 'Z';
+                        output.put(word[i]);
+                        }else{
+                           word[i] = 's';
+                           output.put(word[i]); 
+                        }
+                    }else{
+                        output.put(word[i]); //writes in char's that do not change
+                    }
+                }
+                output << ") "; // end of each word            
+            }        
+        }
+        output << endl; //end of each line      
+    }
+input.close();
+output.close();    
+}

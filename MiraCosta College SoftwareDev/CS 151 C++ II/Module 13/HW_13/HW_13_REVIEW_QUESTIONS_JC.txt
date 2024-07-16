@@ -1,0 +1,36 @@
+Review Questions (10 points)
+
+1) The line containing a throw statement is known as the ___ .
+ANSWER = throw point
+
+2) The ___ block should enclose code that directly or indirectly might cause an exception to be thrown.
+ANSWER = try
+
+4) When writing function or class templates , you use a(n) ___ to specify a generic data type.
+ANSWER = T
+
+5) The beginning of a template is marked by a(n) ___ .
+ANSWER = template prefix
+
+7) A(n) ___ container organizes data in a sequential fashion similar to an array.
+ANSWER = sequence
+
+8) A(n) ___ container uses keys to rapidly access elements.
+ANSWER = associative
+
+11) Write a function template that takes a generic array of a given size as a parameter and reverses the order of the elements in the same  array.  The first parameter of the function should be the array, and the second parameter should be the size of the array.
+ANSWER = 
+template<class T>
+void reverse(T arr[], int size){
+    if(size >= 2){ //if there are at least 2 elements
+        swap(arr[0], arr[size - 1]; //swap first and last
+	reverse(arr + 1, size - 2); //reverse all elements except first and last
+    }
+}
+
+12) Write a function template that is capable of adding any two numeric values and returning the result.
+ANSWER = 
+template <class T>
+T add(T numOne + T numTwo){
+    return (numOne + numTwo)
+}

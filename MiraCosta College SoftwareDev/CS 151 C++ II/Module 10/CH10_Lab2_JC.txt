@@ -1,0 +1,62 @@
+Project 1: Vending Machine Change
+
+INITIALIZE returnTotal, amountPaid, itemPrice, returnQuarters 
+ 	   returnDimes, returnNickles, returnPennies 
+PROMPT a menu option
+CALCULATE returnTotal = amountPaid ($1 only) - itemPrice
+CALCULATE returnQuarters = returnTotal / 25
+CALCULATE returnTotal = returnTotal % 25 
+	  (returns the remainder of returnTotal / 25)
+CALCULATE returnDimes = returnTotal / 10
+CALCULATE returnTotal = returnTotal % 10 
+	  (returns the remainder of returnTotal / 10)
+CALCULATE returnNickles = returnTotal / 5
+CALCULATE returnTotal = returnTotal % 5 
+	  (returns the remainder of returnTotal / 5)
+CALCULATE returnPennies = returnTotal
+OUTPUT returnQuarters, returnDimes, returnNickles, returnPennies 
+
+
+
+
+Project 2: Calculating Pi 
+
+INITIALIZE Pi, answer = 0, counter = 0, denominator = 1
+CALCULATE start with answer = Pi / 4  then we loop
+LOOP till the first six digits after the decimal point of the calculated answer are the same as the first six digits
+    CALCULATE starts with 1/denominator which starts at one (1/1) and iterates by two each step
+    CALCULATE  
+	IF counter is odd then next calculation is subtraction
+             counter starts with 1 or odd so first calculation is subtraction answer = (1/1 - 1/3)
+	IF counter is even then next calculation is addition
+    CALCULATE counter++, denominator += 2
+    CALCULATE 
+        IF counter is odd then next calculation is subtraction
+	IF counter is even then next calculation is addition
+	     counter is now 2 or even so calculation is addition. answer += 1/5 (denominator is now 5 after += 2)
+    CONTINUE counter++, denominator += 2 and IF statements to determine is next calculation will be subtraction or addition
+OUTPUT once first six digits after the decimal point of the calculated answwer are the same as the first six digits
+
+
+
+
+
+Project 3: Horse Movers
+
+INITIALIZE arrayOfHorses, horseTotal, weightTotal, lightName, 
+           lightWeight, heavyName, heavyWeight, averageWeight
+
+LOOP through arrayOfHorses with for loop to iterate the entire size of array
+    INITIALIZE currentHorseWeight = 0 (initialize at the start of each iteration)
+    CALCULATE currentHorseWeight = portableScale(currentHorse)
+    CALCULATE weightTotal += currentHorseWeight
+    CALCULATE if currentHorseWeight < lightWeight
+              lightWeight = currentHorseWeight
+              lightName = backOfStallName
+    CALCULATE if currentHorseWeight > heavyWeight
+              heavyWeight = currentHorseWeight
+              heavyName = backOfStallName
+    CALCULATE horseTotal++
+
+CALCULATE averageWeight =  weightTotal / horseTotal
+OUTPUT horseTotal, averageWeight, lightName, lightWeight, heavyName, heavyWeight

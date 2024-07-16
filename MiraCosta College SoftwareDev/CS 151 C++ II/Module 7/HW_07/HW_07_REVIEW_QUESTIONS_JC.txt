@@ -1,0 +1,37 @@
+Fill-In-The-Blank Questions (10 points)
+
+These questions are taken from Chapter 11 of our textbook:
+
+31. A derived class inherits the ____ of its base class.
+ANSWER = member variables and functions
+
+34. In the following line of code, the class access specification to the base class is  (or is equivalent to)                        .
+
+  class Pet : public Dog  
+ANSWER = public
+ 
+35. In the following line of code, the class access specification to the base class is (or is equivalent to)                        .
+
+  class Pet : Fish  
+ANSWER = private
+ 
+36. Protected members of the base class are like ___  members, except they may be accessed by derived class members.
+ANSWER = private
+
+37. In a private base class, the access specification for base class members by the derived class becomes ______ /  ______ /  _____(choose public, protected, private, or inaccessible for each response) when a base class member is public / protected / private.
+ANSWER = inaccessible
+
+38. In a protected base class, the access specification for base class members by the derived class becomes_______/ ______ / _____ when a base class member is public / protected / private.
+ANSWER = protected
+
+39. In a public base class, the access specification for base class members by the derived class becomes _____/ _______/  _____ when a base class member is public / protected / private.
+ANSWER = public
+
+40. When both a base class and a derived class have constructors, the _______  is executed first.
+ANSWER = base class
+
+41. When both a base class and a derived class have destructors, the  _______is executed first.
+ANSWER = derived class
+
+42. An overridden base class function may be called by a function in the derived class by using the __________ operator.
+ANSWER = scope resolution operator (BaseClass::)

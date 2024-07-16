@@ -1,0 +1,38 @@
+Fill-In-The-Blank Questions (10 points)
+
+These questions are taken from Chapter 12 of our textbook:
+
+1. A(n) ________ is represented in memory as an array of characters with a null terminator.
+ANSWER = C-string
+
+2. The ________ header is required before the library of C-string functions can be used in a program.
+ANSWER = #include <cstring>
+
+3. A(n) ________ is written in your program as a sequence of characters surrounded by double quotes.
+ANSWER = String literal
+
+4. The type ________ is used by the compiler as the type of a string literal.
+ANSWER = char*
+
+15. The ________ function returns the value of a string converted to an integer.
+ANSWER = stoi(), atoi()
+
+18. The ________ function converts an integer to a string.
+ANSWER = str(), to_string()
+
+19. Write a function whose prototype is:
+
+  char lastChar(const char *str)
+
+and that takes a non-empty C-string as a parameter and returns the last character in the string.  
+For example, the expression   lastChar("abc")  would return the character  'c'.  
+Do not use a  string  or any functions in the  string  class.
+ANSWER = 
+char lastChar(const char *str){
+    while(*str != 0){ //go to '\0' so we can reverse by 1 for last char
+        //cout << "test str: " << str << endl;
+        str++; 
+    }
+    str--; //back 1 to last character
+    return *str; 
+}

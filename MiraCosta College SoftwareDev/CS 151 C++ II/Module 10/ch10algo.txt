@@ -1,0 +1,30 @@
+Algorithm:
+
+1    Ask the user to enter a decimal number and store in an  int  variable (sentinel is -1)
+2    Create an empty string to represent that number in base 2
+3    Using a loop:
+
+       divide the number by two and determine the remainder (modulo).  It will be either 0 or 1.
+       add the modulo as a character to the end of the string.
+       continue dividing the number by two until the result is 0.
+
+4    When the loop is finished, print the resulting string
+5    Go back to step 1 and prompt for the next number to convert
+
+ 
+
+Example:  To convert the decimal number 100 to a string of 0's and 1's, continuously take the modulo (remainder) of the number when divided by 2, and put those 0's and 1's together to form a string:
+
+100 / 2 is 50, and 100 % 2 is 0
+50 / 2 is 25 and 50 % 2 is 0
+25 / 2 is 12 and 25 % 2 is 1
+12 / 2 is 6 and 12 % 2 is 0
+6 / 2 is 3 and 6 % 2 is 0
+3 / 2 is 1 and 3 % 2 is 1
+0 and 1 % 2 is 1
+
+The loop stops when the division by 2 results in a 0.
+
+The result is the series of modulo numbers put together to form a string reading up from the bottom: 1100100.
+
+Test your function by computing and printing the string equivalents of 0’s and 1’s for the following decimal numbers:  0, 5, 32, 240, and 682.  Please remember to include a problem statement and algorithm at the top of your program.

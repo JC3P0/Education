@@ -1,0 +1,52 @@
+Review Questions (10 points)
+
+2)    A member function of a class that is not implemented is called a(n) ___ function .
+ANSWER = pure virtual
+
+8)    A base class pointer needs a(n) ___ to be assigned to a derived class pointer.
+ANSWER = type cast
+
+11)   If every C1 class object can be used as a C2 class object, the relationship between the two classes should be implemented using ___ .
+ANSWER = inheritance
+
+13)   The keyword ___ prevents a virtual member function from being overridden.
+ANSWER = final
+
+14)   To have the compiler check that a virtual member function in a child overrides a virtual member function in the parent, you should use the keyword ___ after the function declaration .
+ANSWER = override
+
+
+Suppose that classes  Dog  and  Cat  derive from  Animal,  which in turn derives from  Creature.  Suppose further that  pDog,  pCat,  pAnimal,  and  pCreature  are pointers to the respective classes.  
+Finally, suppose that  Animal  and  Creature  are both abstract classes, but  Dog  and  Cat  are not abstract.
+
+15)     Will the statement:
+
+	Animal a ;
+
+	compile? If not, why not?
+
+ANSWER = no, animal is abstract
+
+16)     Will the statement
+
+	pAnimal = new Cat ;
+
+	compile? If not, why not?
+
+ANSWER =  no, animal is base class to Cat
+
+17)     Will the statement
+
+	pCreature = new Dog ;
+
+	compile? If not, why not?
+
+ANSWER = no, Creature is base class to Dog 
+
+18)     Will the statement
+
+	pCat = new Animal ;
+
+	compile? If not, why not?
+
+ANSWER = yes

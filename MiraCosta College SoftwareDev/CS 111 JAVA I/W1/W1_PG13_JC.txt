@@ -1,0 +1,24 @@
+/*----------------------------------
+* Programmer Name: Josh Clemens
+* Description: Page 13 questions
+* Date: 06-20-22
+-----------------------------------*/
+
+4. What is a compiler? 
+translates programming language to machine code
+
+5. What is a source program? 
+Java or source code
+
+6. What is an object program? 
+compiler produces or object code
+
+7. What do you call a program that runs Java byte-code instructions? 
+Java interpreter
+
+8. Suppose you define a class named NiceClass in a file. What name should the file have? 
+NiceClass.java (should always be the same as public class name)
+
+9. Suppose you compile the class NiceClass . What will be the name of the file 
+with the resulting byte-code? 
+NiceClass.class

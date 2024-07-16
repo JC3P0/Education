@@ -1,0 +1,30 @@
+Review Questions (10 points)
+
+These questions are taken from Chapter 11 of our textbook:
+
+*Suppose that class Y is a friend of class X, meaning that the member functions of class Y have access to all members of class X.  
+*Should the  friend  keyword appear in class Y's declaration or in class X's declaration?
+ANSWER = Class X's declaration
+
+2. Static member variables are defined _____ the class.
+ANSWER = outside
+
+4. A static member variable may be called _____ any instances of the class are defined.
+ANSWER = before
+
+6. A(n) ______ tells the compiler that a specific class will be declared later in the program.
+ANSWER = forward declaration
+
+18. Consider the following class declaration:
+
+    a.How many separate instances of the  x  member exist?
+	ANSWER = 3
+    b.How many separate instances of the  y  member exist ?
+	ANSWER = 3
+    c.How many separate instances of the  z  member exist?
+	ANSWER = 1
+    d.What value will be stored in the  x  and  y  members of each object?
+	ANSWER = Z = 0
+    e.Write a statement that will call the  putThing  member function before the  Thing  objects are created.
+	ANSWER = Thing::putThing(2);
+

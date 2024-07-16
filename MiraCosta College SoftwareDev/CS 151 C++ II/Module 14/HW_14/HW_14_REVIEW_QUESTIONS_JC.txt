@@ -1,0 +1,41 @@
+Review Questions (10 points)
+
+10)Write a function with the heading: "void printSecond(ListNode *ptr)" which prints the value stored in the second node of the list passed as a parameter.  The function should print an error message and terminate the program if the list passed to it has less than 2 nodes.
+ANSWER= 
+void printSecond(ListNode *ptr){
+	if(prt == NULL){
+		cout << "Error: Empty";
+	}
+	//point to second node
+	ptr = ptr -> next;
+	if(prt == NULL){
+		cout << "Error: Only contains one element";
+		exit(0);
+	}
+	//print value of second node
+	cout << ptr -> data;
+}
+
+12) Write a function with the heading: "ListNode * removeFirst(ListNode *ptr)" which is passed a linked list as parameter and returns the new head of the list:  That is, it removes the first node and returns what is left.  The function should deallocate the storage of the removed node.  The function returns  nullptr  if the list passed to it is empty.
+ANSWER= 
+ListNode * removeFirst(ListNode *ptr){
+	if(ptr == NULL){
+		cout << "Error: The list is empty.";
+		return NULL;
+	}
+	else {
+		ListNode *nodePtr = ptr;
+		ptr = ptr -> next; //delete node
+		delete nodePtr;
+	}
+	return ptr;
+}
+
+14) predict what the output will be.
+ANSWER= 
+34.2
+34.2
+
+16) predict what the output will be.
+ANSWER= 
+31.5

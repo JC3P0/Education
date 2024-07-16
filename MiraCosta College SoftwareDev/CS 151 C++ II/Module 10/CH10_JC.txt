@@ -1,0 +1,46 @@
+Checkpoints and Review Questions
+
+10.2  Write a statement defining a variable named  dPtr.  The variable should be a pointer to a  double.
+Answer = double *dPtr;
+ 
+10.3  List three uses of the  *  symbol in C++.
+Answer = 
+1. int *ptr = nullptr;
+2. cout << *(coins + count) << " ";
+3. void doubleValue(int *val)
+ 
+10.4  What is the output of the following program?  (Note:  code circled in red dashes below cannot be copy-and-pasted.)
+Answer = 
+35  40  45
+350  5  25
+
+10.5  Rewrite the following loop so it uses square bracket notation (with  [  and  ] ) instead of the indirection operator.
+Answer = 
+for(int x = 0; x < 30; x++)
+    cout << array[x] << endl;
+ 
+10.6  Assume  ptr  is a pointer to an  int  and holds the memory address (decimal)  6310.  On a system with 4-byte integers, what address will be in  ptr  (in decimal) after the following statement?
+Answer = 0x7fffe8535e8c
+
+10.7  Assume  ptrInt  is a pointer to an  int,  and  ptrDouble  is a pointer to a  double.  For each of the following statements, determine whether the statement is valid or invalid.  For those that are invalid, explain why.
+Answer = 
+A = valid
+B = valid
+C = invalid can only subtract pointers when they are the same data type
+D = invalid can only subtract pointers
+E = valid
+F = valid
+
+10.8  For each of the following variable definitions, determine whether the statement is valid or invalid.  For those that are invalid, explain why.
+Answer = 
+A = valid
+B = valid
+C = invalid cant be different data types
+D = valid
+E = valid
+
+
+This is Review question 10.34 from our textbook:
+34.  Consider the function:
+Show how to call the  modify  function so that it sets the integer defined below to 10 in the calling function:
+Answer = modify(i);
