@@ -1,0 +1,96 @@
+# Node.js specific
+node_modules/
+npm-debug.log
+.env
+
+# Logs
+logs/
+*.log
+
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# Build outputs
+dist/
+build/
+*.tsbuildinfo
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# IDE-specific
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+
+# C++
+*.o
+*.obj
+*.exe
+*.out
+
+# General
+tmp/
+temp/
+
+# Ignore all .dot directories and their contents
+.*
+
+# Allow .git, .github, and .gitignore directories if necessary
+!.git
+!.github
+!.gitignore
+
+# Ignore all .cache folders
+.cache/
+.ccls-cache/
+
+# Ignore Replit configuration
+.replit
+
+# Ignore other specific files and directories
+replit_zip_error_log.txt
+replit.nix
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+node_modules/
+target/
+build/
+dist/
+logs/
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*.swn
+*.lock
+*.env
+*.class
+*.jar
+*.war
+*.ear
+*.zip
