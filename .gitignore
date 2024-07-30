@@ -99,3 +99,5 @@ logs/
 **/package.json
 **/package-lock.json
 **/pom.xml
+**/replit.nix
+**/replit_zip_error_log.txt
