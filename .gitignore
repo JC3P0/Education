@@ -94,3 +94,7 @@ logs/
 *.war
 *.ear
 *.zip
+
+# outdated dependencies
+*package.json
+*package-lock.json
