@@ -96,5 +96,5 @@ logs/
 *.zip
 
 # outdated dependencies
-*package.json
-*package-lock.json
+**/package.json
+**/package-lock.json
