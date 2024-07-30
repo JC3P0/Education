@@ -98,3 +98,4 @@ logs/
 # outdated dependencies
 **/package.json
 **/package-lock.json
+**/pom.xml
