@@ -14,11 +14,6 @@ This repository contains projects, coursework, and tutorials completed as part o
   - [CS 210: Software Engineering](MiraCosta%20College%20SoftwareDev/CS%20210%20Software%20Engineering)
   - [CS 220: Computer Architecture and Assembly Language](MiraCosta%20College%20SoftwareDev/CS%20220%20Comp%20Arch%20-%20Assem%20Lang)
 
-- [Tutorials](Tutorials)
-  - [Node.js Tutorial by Dave Gray](Tutorials/NodeJS)
-  - [MERN Stack Tutorial by Dave Gray](Tutorials/MERN)
-  - [HTML and CSS Tutorial by SuperSimpleDev](Tutorials/HTML.and.CSS)
-
 ## Overview
 
 This repository serves as a comprehensive collection of my academic work and self-learning projects. It includes coursework from MiraCosta College, where I completed my Associate's degree in Software Development, and various tutorials that I followed to enhance my skills.
@@ -26,10 +21,6 @@ This repository serves as a comprehensive collection of my academic work and sel
 ### MiraCosta College Software Development
 
 The MiraCosta College SoftwareDev folder contains projects and assignments from courses taken as part of my degree. Each course has its own subfolder with relevant materials and projects.
-
-### Tutorials
-
-The Tutorials folder contains various projects and exercises completed while following online tutorials. These projects showcase my ability to learn new technologies and apply them practically.
 
 ## License
 
